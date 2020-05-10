@@ -1,0 +1,18 @@
+https://apps.shopify.com/okendo-reviews
+
+{% comment %} before head closing {% endcomment %}
+{{ shop.metafields.okendo.ReviewsWidgetStyleTag }}
+{{ shop.metafields.okendo.StyleCustomizations }}
+
+{% comment %} product grid stars {% endcomment %}
+<div data-oke-reviews-product-listing-rating>{{ product.metafields.okendo.ProductListingSnippet }}</div>
+
+{% comment %} product reviews below description {% endcomment %}
+<div class="okeReviews-widget-holder" data-oke-reviews-widget data-oke-reviews-product-id="shopify-{{ product.id }}">{{ product.metafields.okendo.ProductReviewsWidgetSnippet }}</div>
+
+
+
+
+
+
+
